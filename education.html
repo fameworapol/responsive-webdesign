@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .grid{
+            display: grid;
+            grid-template-rows: repeat(5,auto);
+            grid-template-columns: repeat(3,auto);
+            grid-template: 
+            "header header header header header"
+            "sidebar content content content content"
+            "footer footer footer footer footer"
+            ;
+        }
+        .item{
+            margin: 1px;
+            text-align: center;
+            font-size: 130%;
+        }
+        .a{
+            grid-area: header;
+            background-color: chocolate;
+            
+        }
+        .b{
+            grid-area: sidebar;
+            background-color: crimson;
+            height: 80vh;
+        }
+        .c{
+            grid-area: content;
+            background-color: darkcyan;
+            height: 80vh;
+        }
+        .d{
+            grid-area:footer ;
+            background-color: darkmagenta;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        ul{
+            position: absolute;
+            text-align: left;
+            top: 18rem;
+            left: 2rem;
+        }
+        img{
+            position: relative;
+            top: 8rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="item a"><h3>Header</h3></div>
+        <div class="item b">
+            <ul>
+                <li>fame</li>
+                <li>worapol</li>
+                <li>thongmook</li>
+                <li>610510083</li>
+            </ul>
+        </div>
+        <div class="item c"><img src="https://cdn.pixabay.com/photo/2021/07/13/20/00/lion-6464429__340.jpg" alt=""></div>
+        <div class="item d"><h3>worapolofficial&copy;</h3></div>
+    </div>
+</body>
+</html>

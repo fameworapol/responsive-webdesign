@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;600&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: #efefef;
+            font-family: 'Barlow', sans-serif;
+        }
+        #main{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr;
+            grid-template-areas:
+            "gimage gtext"
+            ;
+        }
+        #grid-text{
+            color: #4b39b5;
+            grid-area:gtext;
+            position: absolute;
+            top: 16em;
+            left: 50em;
+        }
+        #title{
+            font-size: 3em;
+            font-weight: bolder;
+        }
+        #tribute-link{
+            color: #4b39b5;
+            font-weight: bold;
+        }
+        #tribute-link:hover{
+            background-color: #4b39b5;
+            padding: 0.5em;
+            color: white;
+        }
+        #tribute-info{
+            color: black;
+            margin-top: 1.5em;
+            margin-bottom: 1.5em;
+        }
+        
+        #grid-image{
+            grid-area:gimage;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        #image{
+            width: 42em;
+            height: 49em;
+        }
+        #image:hover{
+            opacity: 0.9;
+            cursor: wait;
+            box-shadow: 1px 1px 20px 2px gray;
+        }
+        #img-caption{
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="grid-text">
+            <div id="title">About My <br>Student  Profile</div>
+            <div id="tribute-info">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My name is Mr. Woraphon Thongmook, 21 years old, born in Phetchabun. <br> Studying at Chiang Mai University Elementary school at Ban Huai Khoi  <br>School Studied secondary school at Lom Kao Pittayakom Want to study <br> computer science at the master's degree level and Ph.D.</div>
+            <a id="tribute-link" target="_blank" href="../MyProject/Profile.html">READ MORE</a>
+        </div>
+        <div id="grid-image"></div>
+            <div id="img-div">
+                <img src="https://cdn.pixabay.com/photo/2021/07/24/15/11/15-11-52-362_960_720.jpg" id="image" alt="image">
+                <p id="img-caption">myfriend</p>
+        </div>
+    </div>
+</body>
+</html>

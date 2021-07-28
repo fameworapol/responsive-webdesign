@@ -1,0 +1,115 @@
+
+/*media query 1 (min-width 902px) ภาพ 1 เเถว*/
+/*media query 2 (min-width 595px) (max-width 901px)  ภาพ 2 เเถว*/
+/*media query 2 (max-width 594px)  ภาพ 3 เเถว*/
+body{
+    background-color: #efefef;
+    font-family: 'Barlow', sans-serif;
+}
+.flex-1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-left: 6rem;
+}
+h1{
+    color: #4b39b5;
+    font-size: 2.4rem;
+}
+p{
+    font-size: 1.2rem;
+}
+.flex-2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+    margin-left: 0.1rem;
+}
+img{
+    height: 19rem;
+    margin-left: 2rem;
+}
+img:hover{
+    cursor: wait;
+    box-shadow: 10px 10px 50px 2px black;
+}
+.pf{
+    width: 15.5rem;
+}
+.ed{
+    width: 16.4rem;
+}
+.regis{
+    width: 17rem;
+}
+.flex-3{
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+a{
+    text-decoration: none;
+    background-color: #4b39b5;
+    color: white;
+    font-family:'Barlow', sans-serif;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    position: relative;
+    top: -2.4rem;
+    left: 2rem;
+}
+a:hover{
+    text-decoration: underline;
+    opacity: 0.9;
+}
+.education{
+    margin-left: 7.3rem;
+}
+.register{
+    margin-left: 9.1rem;
+}
+@media (min-width:900px){
+    .education{
+        margin-left: 7.3rem;
+    }
+    .register{
+        margin-left: 9.1rem;
+    }
+    .apps{
+        margin-left:7.5rem;
+    }
+}
+@media (min-width:595px) and (max-width:901px){
+    .profile{
+        position: relative;
+        top: -21.6rem;
+        left: 2.05rem;
+    }
+    .education{
+        position: relative;
+        top: -21.6rem;
+    }
+    .register{
+        position: relative;
+        top: -4.1rem;
+        left: -7.025rem;
+    }
+}
+@media (max-width:594px){
+    .profile{
+        position: relative;
+        top: -40.8rem;
+        left: 2.05rem;
+    }
+    .education{
+        position: relative;
+        top: -21.6rem;
+        left: -15.7rem;
+    }
+    .register{
+        position: relative;
+        top: -4.1rem;
+        left: -7.025rem;
+    }
+}

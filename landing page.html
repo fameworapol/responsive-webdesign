@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@600&display=swap" rel="stylesheet">
+    <style>
+        body{
+            box-sizing: border-box;
+            font-family: 'Lexend', sans-serif;
+            color: #efe0ca;
+        }
+        #header{
+            display: flex;
+            flex-direction: row;
+            background-color:#001233 ;
+            height: 20vh;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        #header-img{
+            width: 4em;
+            height: 4em;
+            margin-right: 0.5em;
+        }
+        #websitename{
+            color: #ff5959;
+        }
+        nav{
+            position: absolute;
+            left: 50em;
+        }
+        a{
+            color: #efe0ca;
+            text-decoration: none;
+            margin-left: 3em;
+        }
+        a:hover{
+            text-decoration: underline;
+            opacity: 0.9;
+        }
+        #content{
+            display: flex;
+            flex-direction: row;
+            height: 78vh;
+            background-color: #001233;
+            position: relative;
+        }
+        #form{
+            margin-left: 8em;
+        }
+        #form>h1{
+            font-size: 2.5em;
+        }
+        button{
+            background-color:#ff5959;
+            border-color: #ff5959;
+            color: #001233;
+            font-weight: bolder;
+            padding: 1em;
+            margin-top: 1em;
+            font-size: 1em;
+            margin-left: 5.3em;
+        }
+        iframe{
+            margin-left: 8em;
+        }
+        input{
+            width: 20em;
+            height: 5em;
+            margin-top: 1em;
+        }
+        p{
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <img src="../photo/logo.png" alt="" id="header-img">
+        <h3 id="initial">FWT</h3>
+        <h3 id="websitename">FAME BAZOOKA</h3>
+        <nav id="nav-bar">
+            <a href="#" class="nav-link">HOME</a>
+            <a href="#" class="nav-link">PRODUCT</a>
+            <a href="#" class="nav-link">PROMOTIONS</a>
+            <a href="#" class="nav-link">CONTACT</a>
+            <a href="#" class="nav-link">SERVICES</a>
+        </nav>
+    </header>
+    <div id="content">
+        <div id="form">
+            <h1>WHAT DO YOU <br> WANT FROM <br> MY WEBSITE?</h1>
+            <br>
+            <p>This is my practise website for project<br> in FreeCodeCamp 
+                Thank you for certification.</p>
+            <br>
+            <label for="form">BECOME TO MEMBER</label>
+            <br>
+            <input type="email" placeholder="Enter Your Email">
+            <br>
+            <button id="submit">Submit</button>
+        </div>
+        <iframe src="https://www.youtube.com/embed/frdj1zb9sMY?autoplay=1&mute=1" frameborder="0" height="500" width="800"></iframe>
+    </div>
+</body>
+</html>

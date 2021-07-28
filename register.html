@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลงทะเบียน</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;600&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: #efefef;
+            color: #4b39b5;
+            font-family: 'Barlow', sans-serif;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            background-color: #4b39b5 ;
+            color: #efefef;
+            margin-left: 22em;
+            width: 50vw;
+            height: 82vh;
+        }
+        div{
+            margin-top: 0.5em;
+        }
+        #header{
+            text-align: center;
+        }
+        label{
+            font-weight: bold;
+            margin-left: 1em;
+        }
+        input,textarea,select{
+            margin-left: 1em;
+            margin-top: 0.5em;
+        }
+        textarea,select{
+            width: 48vw;
+        }
+        input[type="text"],input[type="number"],input[type="email"],input[type="date"]{
+            width: 48vw;
+        }
+        input[type="checkbox"],input[type="radio"]{
+            margin-left: 1em;
+        }
+        #submit{
+            position: relative;
+            left: 28em;
+            color: #4b39b5;
+            background: #efefef;
+            padding: 0.5em;
+            font-weight: bold;
+        }
+        #submit:hover{
+            text-decoration: underline;
+            opacity: 0.9;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1 id="title">REGISTRATION</h1>
+        <p id="description">Enter your information and check before press Submit.Thank you for taking this survey</p>
+    </div>
+    <form id="survey-form">
+        <div>
+            <label for="name" id="name-label">Name</label>
+            <br>
+            <input type="text" id="name" name="name" placeholder="Enter your Name">
+        </div>
+
+        <div>
+            <label for="email" id="email-label">Email</label>
+            <br>
+            <input type="email" id="email" name="email" placeholder="Enter your Email">
+        </div>
+
+        <div>
+            <label for="height" id="number-label">Height</label>
+            <br>
+            <input type="number" id="number" name="height" min="100" max="300" placeholder="Height">
+        </div>
+
+        <div>   
+            <label for="height" id="number-label2">Weight</label>
+            <br>
+            <input type="number" id="number2" name="Weight" min="0" max="500" placeholder="Weight">
+        </div>
+
+        <div>
+            <label for="birthday">Birth Day</label>
+            <br>
+            <input type="date" id="birthday" placeholder="Birth Day"></input>
+        </div>
+        <div>
+            <label for="clang">Computer Language</label>
+            <br>
+            <input type="checkbox" value="Python">Python
+            <input type="checkbox" value="JavaScript">JavaScript
+            <input type="checkbox" value="Java">Java
+            <input type="checkbox" value="C">C
+            <input type="checkbox" value="other">Other
+        </div>
+
+        <div>
+            <label for="education-label">Education Level</label>
+            <br>
+            <select name="ed-level" id="dropdown">
+                <option value="ปริญญาเอก">ปริญญาเอก</option>
+                <option value="ปริญญาโท">ปริญญาโท</option>
+                <option value="ปริญญาตรี" >ปริญญาตรี</option> 
+                <option value="มัธยมศึกษา">มัธยมศึกษา</option>
+                <option value="ประถมศึกษา">ประถมศึกษา</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="gender">Gender</label>
+            <br>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Other
+        </div>
+        <div>   
+            <label for="feedback">Feedback</label>
+            <br>
+            <textarea name="fb" id="Feedback" cols="50" rows="4.5" placeholder="Thanks for the feedback"></textarea>
+        </div>
+        
+        <div>
+            <button id="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
